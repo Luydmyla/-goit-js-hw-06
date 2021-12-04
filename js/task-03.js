@@ -12,3 +12,32 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const list = document.querySelector("ul");
+console.log(list);
+const listElements = images.map(image => 
+  `<li class="list-item">
+<img class="img-item" src = "${image.url}" alt = "${image.alt}" width = "320"   /> 
+  </li>`
+// const listElem = document.createElement('li');
+// // console.log(listElem);
+//   // listElem.classList.add('item');
+  // const imgElem = document.createElement('img')
+//   imgElem.src = image.url;
+//   imgElem.alt = image.alt;
+//   // console.log(imgElem);
+ 
+//   listElem.appendChild(imgElem);
+//   console.log(listElem);
+   // return listElem;
+ )
+  .join("");
+  // listElements.classList = 
+  list.insertAdjacentHTML("beforeend", listElements);
+console.log(list);
+// const listElem = document.createElement('li');
+//   const imgElem = document.createElement('img')
+//   imgElem.src = images.url;
+// imgElem.alt = images.alt;
+//   listElem.appendChild(imgElem);
+//   console.log(listElem);
