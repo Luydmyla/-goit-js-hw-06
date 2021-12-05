@@ -16,8 +16,8 @@ const images = [
 const list = document.querySelector("ul");
 console.log(list);
 const listElements = images.map(image => 
-  `<li class="list-item">
-<img class="img-item" src = "${image.url}" alt = "${image.alt}" width = "320"   /> 
+  `<li class="list-item"  style = "list-style-type: none">
+<img class="img-item" src = "${image.url}" alt = "${image.alt}" width = "480"  /> 
   </li>`
 // const listElem = document.createElement('li');
 // // console.log(listElem);
