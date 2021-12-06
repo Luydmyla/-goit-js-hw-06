@@ -13,6 +13,6 @@ function onInputBlur(event) {
         inputElem.classList.remove('valid');
         inputElem.classList.add('invalid');
         // console.log(inputElem);
-        event.currentTarget.value = '';
+        // event.currentTarget.value = '';
     }
 }
