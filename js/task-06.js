@@ -5,7 +5,7 @@ inputElem.addEventListener('blur', onInputBlur );
 function onInputBlur(event) {
     // console.log(event.currentTarget.value.length);
     inputElem.classList.add('#validation-input');
-    if (event.currentTarget.value.length == inputElem.dataset.length) {
+    if (Number(event.currentTarget.value.length) === Number(inputElem.dataset.length)) {
         inputElem.classList.remove('invalid');
         inputElem.classList.add('valid');
         // console.log(inputElem);
